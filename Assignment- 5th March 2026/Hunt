@@ -1,0 +1,34 @@
+App
+│
+├── Navbar
+├── Stories
+│   ├── StoryItem
+│   ├── StoryItem
+│
+├── Feed
+│   ├── Post
+│   │   ├── PostHeader
+│   │   ├── PostImage
+│   │   ├── PostActions
+│   │   ├── PostCaption
+│   │
+│   ├── Post
+│
+├── Sidebar
+│   ├── ProfileCard
+│   ├── Suggestions
+│
+└── Footer
+
+
+[ Navbar ]
+
+[ Stories Stories Stories ]
+
+[ Post ]
+[ Post ]
+[ Post ]
+
+[ Sidebar ]
+
+[ Footer ]

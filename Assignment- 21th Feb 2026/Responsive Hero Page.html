@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Hero Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Left Content */
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text button {
+            padding: 12px 20px;
+            border: none;
+            background-color: white;
+            color: #4CAF50;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Right Image */
+        .hero img {
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero img {
+                width: 200px;
+                margin-top: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <!-- Left Side -->
+        <div class="hero-text">
+            <h1>Hello, I'm Bhavana 👋</h1>
+            <p>A passionate Computer Science student interested in IoT, Cybersecurity, and Web Development.</p>
+            <button>Get Started</button>
+        </div>
+
+        <!-- Right Side -->
+        <div>
+            <img src="https://via.placeholder.com/300" alt="Hero Image">
+        </div>
+
+    </section>
+
+</body>
+</html>

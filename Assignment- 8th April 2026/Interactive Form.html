@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter your name">
+        <div class="error" id="nameError"></div>
+
+        <input type="email" id="email" placeholder="Enter your email">
+        <div class="error" id="emailError"></div>
+
+        <input type="password" id="password" placeholder="Enter password">
+        <div class="error" id="passwordError"></div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="success" id="successMsg"></div>
+</div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+
+        let valid = true;
+
+
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("passwordError").innerText = "";
+        document.getElementById("successMsg").innerText = "";
+
+
+        if (name === "") {
+            document.getElementById("nameError").innerText = "Name is required";
+            valid = false;
+        }
+
+        if (!email.includes("@")) {
+            document.getElementById("emailError").innerText = "Enter valid email";
+            valid = false;
+        }
+
+        if (password.length < 6) {
+            document.getElementById("passwordError").innerText = "Password must be at least 6 characters";
+            valid = false;
+        }
+
+        if (valid) {
+            document.getElementById("successMsg").innerText = "Form submitted successfully!";
+        }
+    });
+</script>
+
+</body>
+</html>

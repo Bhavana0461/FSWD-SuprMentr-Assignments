@@ -1,0 +1,56 @@
+What I Understood
+
+When we open any website like Google or YouTube, our system sends a request through the browser. The browser connects to the server through the internet and gets the required webpage back.
+
+This process works using client-server architecture.
+
+Client = User / Browser
+Server = Website storage and processing system
+
+The client asks for data, and the server gives the response.
+
+Simple Diagram
+User → Browser → Internet → Server → Response → Webpage
+Explanation
+
+First, the user enters a website name in the browser.
+Then the browser sends a request to the server.
+The server receives the request, processes it, and sends back the website data.
+Finally, the browser displays the webpage on the screen.
+
+Steps When We Open a Website
+1. Enter URL
+
+We type a website name like www.google.com
+ in the browser.
+
+2. Browser Sends Request
+
+The browser sends a request through the internet.
+
+3. Server Receives Request
+
+The server receives the request and finds the required webpage data.
+
+4. Server Sends Response
+
+The server sends back HTML, CSS, images, and other files.
+
+5. Browser Displays Webpage
+
+The browser arranges all the data and shows the webpage to the user.
+
+What I Learned
+
+From this assignment, I understood that websites do not open directly.
+There is a communication process between the client and server.
+
+I learned:
+
+What is client-server architecture
+How browser and server communicate
+How request and response work
+What happens in the background when opening a website
+Conclusion
+
+By doing this assignment, I understood the basic working of the internet and website loading process. It helped me learn how a browser, internet, and server work together to display a webpage.

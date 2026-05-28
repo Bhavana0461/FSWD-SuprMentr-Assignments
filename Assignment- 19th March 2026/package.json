@@ -1,0 +1,15 @@
+{
+  "name": "folder-architect",
+  "version": "1.0.0",
+  "description": "Folder Architect assignment with modular project structure",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
